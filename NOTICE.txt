@@ -1,0 +1,7 @@
+dsh-nia-mood 0.1.1
+Based on dsh-feiyu-mood 0.7.3 by Yuuyuko-uu, MIT License.
+Upstream: https://github.com/Yuuyuko-uu/dsh-feiyu-mood
+The host adapter, session/workspace binding, settings panel are derived from that project.
+Nia-specific policy, dimensions, validation, state math and tests are new or modified.
+Original license retained in LICENSE. Original mascot artwork and update service are not included.
+This is an independent local fork, not an official upstream release.

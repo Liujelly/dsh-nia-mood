@@ -1,0 +1,49 @@
+{
+  "name": "dsh-nia-mood",
+  "version": "0.4.0",
+  "description": "通用角色情绪：连续状态、人物态度与可配置人格背景",
+  "license": "MIT",
+  "author": "Nia mood contributors",
+  "type": "module",
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "mood",
+    "ai-companion"
+  ],
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "NOTICE.txt",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings",
+        "@deepseek-ai/dsh-client-ui-settings-plugins"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test --test-isolation=none test/*.test.mjs",
+    "check": "node --check lib/index.js && node --check lib/emotion.js && node --check client.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -52,13 +52,13 @@ QQ 先录入可信事件、评估新变化，再让 Agent 决定是否回复；�
 DSH 插件管理器支持本地目录、`file:` 和 `link:` 来源。可在插件管理界面的安装入口选择本地目录，或填写下列完整来源：
 
 ```text
-link:C:/Users/jellyStone/Documents/Codex/2026-10-26/kan/outputs/dsh-nia-mood
+link:C:/projects/dsh-role-plugins/packages/dsh-nia-mood
 ```
 
 如果 `dsh` 命令已经可用，也可以运行：
 
 ```powershell
-dsh plugin --profile desktop add "link:C:/Users/jellyStone/Documents/Codex/2026-10-26/kan/outputs/dsh-nia-mood"
+dsh plugin --profile desktop add "link:C:/projects/dsh-role-plugins/packages/dsh-nia-mood"
 ```
 
 安装包在同级输出目录：`dsh-nia-mood-0.3.3.tgz`。迁移或固定版本时可使用包文件；本地开发链接依赖源目录一直存在。此插件尚未发布到 npm，不要只填写包名让管理器联网安装同名包。
